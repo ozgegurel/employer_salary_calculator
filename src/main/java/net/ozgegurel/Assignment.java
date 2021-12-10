@@ -12,7 +12,6 @@ public class Assignment {
         System.out.println(ozge.toString());
             
         employees.put(ozge.name, ozge.salary);
-        System.out.println(employees.keySet());
         System.out.println(employees);
 
     }
