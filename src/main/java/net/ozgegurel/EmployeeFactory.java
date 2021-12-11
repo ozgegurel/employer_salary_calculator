@@ -14,9 +14,14 @@ public class EmployeeFactory {
                 employee = new Technologist();
                 break;
             case HUMANPARTNER: 
-                employee = new Technologist(); //TODO: add HumanPartner() and others
+                employee = new HumanPartner();
                 break;
-        
+            case FINANCE: 
+                employee = new FinancialManager();
+                break;
+            case GROWTH: 
+                employee = new GrowthManager();
+                break;
             default:
                 throw new IllegalArgumentException();
         }
@@ -26,5 +31,4 @@ public class EmployeeFactory {
         return employee;
     }
 
-    
 }

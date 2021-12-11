@@ -2,6 +2,7 @@ package net.ozgegurel;
 
 public class FixPromoteStrategy implements PromoteStrategy {
     Float fixAmount = 0.0f;
+    
     public FixPromoteStrategy(float fixAmount){
         this.fixAmount = fixAmount;
     }
