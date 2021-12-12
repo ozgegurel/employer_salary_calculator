@@ -17,7 +17,7 @@ public class Employee {
         strategy.apply(this);
     }
 
-    public void changePromotion(PromoteStrategy strategy){
+    public void updatePromotion(PromoteStrategy strategy){
         this.strategy = strategy;
     }
 

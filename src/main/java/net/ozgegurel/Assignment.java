@@ -24,7 +24,7 @@ public class Assignment {
         
         System.out.println("Employee has promoted as "+ ozge.toString());
 
-        ozge.changePromotion(new PercentagePromoteStrategy(new BigDecimal(20)));
+        ozge.updatePromotion(new PercentagePromoteStrategy(new BigDecimal(20)));
         System.out.println("Employee has changed promote strategy: "+ ozge.toString());
 
         ozge.applyPromotion();
