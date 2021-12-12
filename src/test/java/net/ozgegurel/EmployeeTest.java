@@ -3,7 +3,6 @@ package net.ozgegurel;
 import static org.junit.Assert.assertEquals;
 
 import java.math.BigDecimal;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +12,7 @@ class EmployeeTest {
 
     @Before                                         
     void setUp() {
-        employee = new Employee("test_employee", new BigDecimal(0), null);
+        employee = new Employee("test_employee", new BigDecimal(10), null);
     }
 
     @Test                                               
