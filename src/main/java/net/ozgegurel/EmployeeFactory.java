@@ -1,10 +1,12 @@
 package net.ozgegurel;
 
+import java.math.BigDecimal;
+
 public class EmployeeFactory {
 
     public static Employee create(
             String name,
-            Float salary,
+            BigDecimal salary,
             EmployeeDepartment department,
             PromoteStrategy strategy) {
         

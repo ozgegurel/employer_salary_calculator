@@ -1,14 +1,15 @@
 package net.ozgegurel;
 
+import java.math.BigDecimal;
 
 public class HumanPartner extends Employee{
 
-    public HumanPartner(String name, Float salary, PromoteStrategy strategy){
+    public HumanPartner(String name, BigDecimal salary, PromoteStrategy strategy){
         super(name, salary, strategy);
     }
 
     public HumanPartner(){
-        super("", 0.0f, null);
+        super("", new BigDecimal(0), null);
     }
 
 }

@@ -1,14 +1,15 @@
 package net.ozgegurel;
 
+import java.math.BigDecimal;
 
 public class FinancialManager extends Employee{
 
-    public FinancialManager(String name, Float salary, PromoteStrategy strategy){
+    public FinancialManager(String name, BigDecimal salary, PromoteStrategy strategy){
         super(name, salary, strategy);
     }
 
     public FinancialManager(){
-        super("", 0.0f, null);
+        super("", new BigDecimal(0), null);
     }
 
 }

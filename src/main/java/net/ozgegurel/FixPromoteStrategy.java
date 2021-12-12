@@ -1,15 +1,17 @@
 package net.ozgegurel;
 
+import java.math.BigDecimal;
+
 public class FixPromoteStrategy implements PromoteStrategy {
-    Float fixAmount = 0.0f;
-    
-    public FixPromoteStrategy(float fixAmount){
+    BigDecimal fixAmount = new BigDecimal(0);
+
+    public FixPromoteStrategy(BigDecimal fixAmount){
         this.fixAmount = fixAmount;
     }
 
     @Override
     public Employee apply(Employee employee) {
-        employee.salary += fixAmount;
+        employee.salary = employee.salary.add(fixAmount);
         return employee;
     }
 }
