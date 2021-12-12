@@ -1,6 +1,9 @@
-package net.ozgegurel;
+package net.ozgegurel.department;
 
 import java.math.BigDecimal;
+
+import net.ozgegurel.Employee;
+import net.ozgegurel.PromoteStrategy;
 
 public class HumanPartner extends Employee{
 

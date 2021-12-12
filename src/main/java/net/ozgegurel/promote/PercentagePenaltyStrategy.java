@@ -1,11 +1,14 @@
-package net.ozgegurel;
+package net.ozgegurel.promote;
 
 import java.math.BigDecimal;
 
-public class PercentagePromoteStrategy implements PromoteStrategy{
+import net.ozgegurel.Employee;
+import net.ozgegurel.PromoteStrategy;
+
+public class PercentagePenaltyStrategy implements PromoteStrategy{
     BigDecimal percentAmount = new BigDecimal(0);
     
-    public PercentagePromoteStrategy(BigDecimal percentAmount){
+    public PercentagePenaltyStrategy(BigDecimal percentAmount){
         this.percentAmount = percentAmount;
 
     }
@@ -13,7 +16,7 @@ public class PercentagePromoteStrategy implements PromoteStrategy{
     @Override
     public Employee apply(Employee employee) {
         BigDecimal hundred = new BigDecimal(100);
-        BigDecimal multipleNumber = percentAmount.add(hundred).divide(hundred);
+        BigDecimal multipleNumber = hundred.subtract(percentAmount).divide(hundred);
         employee.salary = employee.salary.multiply(multipleNumber);
         return employee;
     }

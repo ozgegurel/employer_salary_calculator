@@ -1,6 +1,9 @@
-package net.ozgegurel;
+package net.ozgegurel.promote;
 
 import java.math.BigDecimal;
+
+import net.ozgegurel.Employee;
+import net.ozgegurel.PromoteStrategy;
 
 public class FixPromoteStrategy implements PromoteStrategy {
     BigDecimal fixAmount = new BigDecimal(0);
