@@ -19,10 +19,14 @@ public class Assignment {
         System.out.println("Employee is added the list " + employees);
 
         ozge.applyPromotion();
+        ozge.applyPromotion();
+        ozge.applyPromotion();
+        
         System.out.println("Employee has promoted as "+ ozge.toString());
 
-        ozge.strategy = new PercentagePromoteStrategy(new BigDecimal(20));
+        ozge.changePromotion(new PercentagePromoteStrategy(new BigDecimal(20)));
         System.out.println("Employee has changed promote strategy: "+ ozge.toString());
+
         ozge.applyPromotion();
         System.out.println("Employee has promoted as "+ ozge.toString());
 

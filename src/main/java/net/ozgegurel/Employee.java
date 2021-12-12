@@ -17,6 +17,10 @@ public class Employee {
         strategy.apply(this);
     }
 
+    public void changePromotion(PromoteStrategy strategy){
+        this.strategy = strategy;
+    }
+
     public String toString(){
         return "name:" + this.name + " salary:"+ this.salary ;
     }
