@@ -19,3 +19,25 @@ Accurate calculation of the worker's salary ensures the employer and the workpla
 You can easily transfer information to your employees, accountants and financial advisors.
 
 In order to keep this process as simple as possible, a system is created in which information about your employees is kept and calculations can be made easily. Thanks to the practical and fast employer salary calculation program, the personnel management process is optimized.
+
+## Design Patterns
+
+The Design Models that I use Factory Pattern and Strategy Pattern.
+
+The Factory Pattern model allows new employees to be easily created in my project, taking into account the department type and promotion strategy set for the employee.
+
+```java
+Employee ozge = EmployeeFactory.create(
+    name,
+    salary,
+    department,
+    promoteStrategy
+);
+```
+
+The Strategy Pattern model enables to apply the chosen promotional behavior to the worker and help worker information easily adapt to change. Also, the promotional strategy switches can be implemented quickly.
+
+```java
+ozge.updatePromotion(promoteStrategy);
+ozge.applyPromotion();
+```
