@@ -41,3 +41,5 @@ The Strategy Pattern model enables to apply the chosen promotional behavior to t
 ozge.updatePromotion(promoteStrategy);
 ozge.applyPromotion();
 ```
+
+![Uml Diagram](uml_diagram.jpg)
