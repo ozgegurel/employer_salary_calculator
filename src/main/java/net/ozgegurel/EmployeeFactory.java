@@ -1,10 +1,18 @@
 package net.ozgegurel;
 
+import java.math.BigDecimal;
+
+import net.ozgegurel.department.EmployeeDepartment;
+import net.ozgegurel.department.FinancialManager;
+import net.ozgegurel.department.GrowthManager;
+import net.ozgegurel.department.HumanPartner;
+import net.ozgegurel.department.Technologist;
+
 public class EmployeeFactory {
 
     public static Employee create(
             String name,
-            Float salary,
+            BigDecimal salary,
             EmployeeDepartment department,
             PromoteStrategy strategy) {
         
@@ -14,9 +22,14 @@ public class EmployeeFactory {
                 employee = new Technologist();
                 break;
             case HUMANPARTNER: 
-                employee = new Technologist(); //TODO: add HumanPartner() and others
+                employee = new HumanPartner();
                 break;
-        
+            case FINANCE: 
+                employee = new FinancialManager();
+                break;
+            case GROWTH: 
+                employee = new GrowthManager();
+                break;
             default:
                 throw new IllegalArgumentException();
         }
@@ -26,5 +39,4 @@ public class EmployeeFactory {
         return employee;
     }
 
-    
 }

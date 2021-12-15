@@ -1,4 +1,4 @@
-package net.ozgegurel;
+package net.ozgegurel.department;
 
 public enum EmployeeDepartment {
     TECHNOLOGY,
