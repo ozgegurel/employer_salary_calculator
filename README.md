@@ -79,4 +79,5 @@ ozge.applyPromotion();
 ```
 
 ## **Uml Diagram**
-![Uml Diagram](uml_diagram.jpg)
+
+![Uml Diagram](doc/uml_diagram.jpg)

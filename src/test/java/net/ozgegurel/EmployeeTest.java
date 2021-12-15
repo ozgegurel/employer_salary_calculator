@@ -17,7 +17,7 @@ class EmployeeTest {
 
     @Test                                               
     void testToString() {
-        final String expected = "name:test_employee salary:10";
+        final String expected = "name:test_employee salary:10000000";
 
         assertEquals(
             "Failure: Strings are not equal.",
